@@ -1,2 +1,2 @@
 # Batch-Virus
-WORK IN PROGRESS
+HAVEN'T TESTED
